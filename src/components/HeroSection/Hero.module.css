@@ -1,0 +1,187 @@
+.hero {
+  height: 50vh;
+  min-height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/hero.png");
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ? Left contnent- Text of hero banner */
+
+.leftContent {
+  align-self: flex-start;
+  max-width: 50%; /* Takes up left half */
+  margin-top: 3rem;
+  margin-left: -1rem;
+  padding-left: 0;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-left: -2rem;
+  padding-left: 2rem;
+}
+
+/* ? SEARCH SECTION */
+
+.searchSection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.searchBar {
+  display: flex;
+  background: white;
+  padding: 0rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 90%; /* Takes full width of searchSection */
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 1.2rem 2rem;
+  font-size: 1.1rem;
+}
+
+.searchInput::placeholder {
+  color: #666;
+}
+
+/* Search Btn */
+
+.searchButton {
+  background-color: #ff6b57;
+  color: white;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.searchButton:hover {
+  background-color: #fa5641;
+  color: white;
+}
+
+/* RWD- Tablet & Mobile */
+@media (max-width: 768px) {
+  .hero {
+    height: 35vh;
+    min-height: 300px;
+  }
+  .hero {
+    height: 35vh; /* Reduce height on tablet */
+    min-height: 300px;
+  }
+
+  .heroContent {
+    padding: 0 1.5rem;
+  }
+
+  .leftContent {
+    max-width: 80%; /* Allow more width for text */
+    margin-top: 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.2rem; /* Smaller title */
+    line-height: 1.1;
+  }
+
+  .searchSection {
+    max-width: 600px;
+    padding-bottom: 2rem;
+  }
+
+  .searchInput {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .searchButton {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* MOBILE STYLES (480px and below) */
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh; /* Increase height to prevent spillover */
+    min-height: 400px; /* Ensure minimum height */
+  }
+
+  .heroContent {
+    padding: 0 1rem;
+    justify-content: space-around; /* Better spacing */
+  }
+
+  .leftContent {
+    max-width: 95%;
+    margin-top: 1rem;
+    text-align: center; /* Center text on mobile */
+  }
+
+  .heroTitle {
+    font-size: 1.8rem; /* Much smaller title for mobile */
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .searchSection {
+    max-width: 100%;
+    padding-bottom: 1rem; /* Add bottom padding */
+  }
+
+  .searchBar {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 0.4rem;
+    padding: 0.5rem;
+    background: transparent;
+  }
+
+  .searchInput {
+    padding: 1.2rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .searchButton {
+    padding: 1.2rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    align-self: center; /* Center the button */
+    min-width: 120px;
+  }
+}
