@@ -17,3 +17,23 @@ This is a learning project for Mission Ready Level 5 Advanced Full Stack develop
 - **Build Tool**: Vite
 - **Styling**: CSS Modules
 - **Development**: ESLint for code quality
+
+## Design & Wireframe
+
+### Original Wireframes
+
+![Desktop Wireframe](./images/desktop-wireframe.png) ![Mobile Wireframe](./images/mobile-view-wireframe.png)
+
+## Screenshots
+
+### Desktop View
+
+![Desktop View](./images/desktop.png)
+
+### Tablet View
+
+![Tablet View](./images/tablet.png)
+
+### Mobile View
+
+![Mobile View](./images/mobile.png)
