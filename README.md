@@ -1,12 +1,19 @@
-# React + Vite
+# Marketing Association NZ Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for Marketing Association NZ built with React and Vite.
+This is a learning project for Mission Ready Level 5 Advanced Full Stack development program
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design** - Mobile-first approach with hamburger navigation
+- **Hero Section** - Eye-catching banner with search functionality
+- **Card Grid** - Dynamic article cards with hover effects
+- **Modern UI** - Clean design with smooth transitions
+- **Fast Performance** - Built with Vite for optimal loading speeds
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 18
+- **Build Tool**: Vite
+- **Styling**: CSS Modules
+- **Development**: ESLint for code quality
