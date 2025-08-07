@@ -1,47 +1,75 @@
+/** 
+*?  Card Component Styles
+*  
+* Consistent card sizing with aspect ratio 
+* Hover animations on cards 
+*  Adjusted card img with object fit 
+**/
+
+/* ********************* */
+/** MAIN CARD CONTAINER  */
+/* ********************* */
 .card {
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
   cursor: pointer;
   transition: all 0.3 ease;
-  overflow: hidden;
+
+  overflow: hidden; /* Stop content from breaking layout */
   width: 100%;
-  aspect-ratio: 1; /* Makes it square */
+  aspect-ratio: 1; /* Forces square cards */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack imgs above content */
 }
 
+/** Hover Effects & Animations */
+/* Lift effect on card hover */
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Moves card up 5px */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Larger shadow */
 }
+
+/* ********************* */
+/** IMG CONTAINER & STYLING  */
+/* ********************* */
 
 .imageContainer {
-  width: 100%;
-  height: 80%; /* Top 60% for image */
+  width: 100%; /* Take up full width of card */
+  height: 80%; /* Top 80% of container for image */
   overflow: hidden;
 }
 
 .cardImage {
+  /* IMG sizing  */
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 11%;
+  object-fit: cover; /* keeps aspect ratio while filling container  */
+  object-position: center 11%; /* show top section of img  */
   transition: transform 0.3s ease;
 }
 
+/* IMG zoom on card hover */
 .card:hover .cardImage {
-  transform: scale(1.05);
+  transform: scale(1.05); /* zoom in on hover  */
 }
 
+/* ********************* */
+/** CONTENT AREA STYLING  */
+/* ********************* */
+
 .cardContent {
+  /* Layout */
   padding: 1rem;
   height: 40%; /* Bottom 40% for content */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #f5eedf;
+  background: #f5eedf; /* BG color for content area  */
 }
+
+/* * TXT Styling  */
 
 .cardTitle {
   font-size: 1.1rem;
@@ -55,8 +83,10 @@
   font-size: 0.9rem;
   color: #666;
   line-height: 1.4;
+
+  /* TXT Truncation */
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limits to 3 lines */
-  -webkit-box-orient: vertical;
+  display: -webkit-box; /* Req for line clamping */
+  -webkit-line-clamp: 3; /* Limits txt to exactly 3 lines */
+  -webkit-box-orient: vertical; /* sets txt direction for clamping */
 }

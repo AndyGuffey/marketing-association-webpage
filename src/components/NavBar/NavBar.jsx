@@ -37,7 +37,7 @@ export default function NavBar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile  Drop down Menu */}
       <div
         className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.open : ""}`}
       >

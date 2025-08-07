@@ -75,7 +75,7 @@
   color: #666;
 }
 
-/* Search Btn */
+/* ! Search Btn */
 
 .searchButton {
   background-color: #ff6b57;
@@ -95,6 +95,7 @@
   color: white;
 }
 
+/** RWD Media queries  */
 /* RWD- Tablet & Mobile */
 @media (max-width: 768px) {
   .hero {
@@ -136,7 +137,7 @@
   }
 }
 
-/* MOBILE STYLES (480px and below) */
+/* 2. MOBILE STYLES (480px and below) */
 @media (max-width: 480px) {
   .hero {
     height: 50vh; /* Increase height to prevent spillover */

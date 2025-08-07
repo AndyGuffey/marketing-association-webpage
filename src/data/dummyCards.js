@@ -4,7 +4,7 @@ export const dummyCards = [
     image: "/images/cards/card1.png",
     title: "Digital Marketing Trends 2025",
     description:
-      "Explore the latest digital marketing trends and strategies that are shaping the industry in 2024.",
+      "Explore the latest digital marketing trends and strategies that are shaping the industry in 2025.",
   },
   {
     id: 2,
