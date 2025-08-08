@@ -1,18 +1,33 @@
+/*? HERO Section Styles  */
+/* Full width banner with BG Img & search bar (Non Functional) */
+
+/********************* */
+/** HERO CONTAINER  */
+/*********************  */
 .hero {
-  height: 50vh;
-  min-height: 200px;
+  /* Layout & sizing */
+  height: 50vh; /* amount of VH taken up */
+  min-height: 200px; /* Ensure min height on small screens */
+
+  /* BG IMG Styling */
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/hero.png");
 
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-size: cover; /* Scale img to cover whole container */
+  background-position: center top; /* Focus on top-center of img  */
+  background-repeat: no-repeat; /* No img repetition */
+
+  /* Layout  */
   position: relative;
   display: flex;
   align-items: center;
 }
 
+/********************* */
+/** LEFT SECTION - HERO TITLE  */
+/********************* */
 .heroContent {
+  /* Layout  */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -26,10 +41,11 @@
 /* ? Left contnent- Text of hero banner */
 
 .leftContent {
-  align-self: flex-start;
+  /* Positioning */
+  align-self: flex-start; /* Start of flex container*/
   max-width: 50%; /* Takes up left half */
   margin-top: 3rem;
-  margin-left: -1rem;
+  margin-left: -1rem; /* Left adjustment */
   padding-left: 0;
 }
 
@@ -38,10 +54,12 @@
   font-weight: 700;
   color: white;
   line-height: 1.2;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+  margin-bottom: 1rem; /* Space below title*/
   margin-left: -2rem;
   padding-left: 2rem;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* ? SEARCH SECTION */
@@ -94,9 +112,11 @@
   background-color: #fa5641;
   color: white;
 }
-
+/************************ */
 /** RWD Media queries  */
-/* RWD- Tablet & Mobile */
+/************************ */
+
+/* RWD- Tablet  768px breakpoint  */
 @media (max-width: 768px) {
   .hero {
     height: 35vh;
@@ -136,19 +156,22 @@
     font-size: 1rem;
   }
 }
+/**************************************** */
+/** 2. MOBILE STYLES (480px and below) */
+/**************************************** */
 
-/* 2. MOBILE STYLES (480px and below) */
 @media (max-width: 480px) {
   .hero {
-    height: 50vh; /* Increase height to prevent spillover */
-    min-height: 400px; /* Ensure minimum height */
+    height: 40vh; /* Increase height to prevent spillover */
+    min-height: 300px; /* Ensure minimum height */
   }
 
   .heroContent {
     padding: 0 1rem;
-    justify-content: space-around; /* Better spacing */
+    justify-content: center; /* Better spacing */
   }
 
+  /* HERO TXT */
   .leftContent {
     max-width: 95%;
     margin-top: 1rem;
@@ -159,6 +182,8 @@
     font-size: 1.8rem; /* Much smaller title for mobile */
     line-height: 1.2;
     margin-bottom: 0.5rem;
+    margin-left: 0;
+    text-align: center;
   }
 
   .searchSection {
