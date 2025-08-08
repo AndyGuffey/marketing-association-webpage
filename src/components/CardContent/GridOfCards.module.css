@@ -1,37 +1,71 @@
+/* * GRID OF CARDS COMPONENT STYLES  */
+/** Overview :
+*
+* Creates responsive grid layout for the artical cards 
+* CSS Grid with auto-fit and minmax for flexibility
+* Breakpoint adjustments for RWD  
+*
+ */
+
 .cardGrid {
-  padding: 4rem 0;
-  background-color: #f8f9fa;
+  /* Spacing & layout  */
+  padding: 4rem 0; /* Vertical padding for section */
+  background-color: #f8f9fa; /*Light grey BG to seperate from other sections  */
 }
 
+/** Content container & max width */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; /* Set limit & prev contnent from being too wide on bigger screens */
+  margin: 0 auto; /* Center content */
   padding: 0 0.5rem;
 }
 
 .sectionTitle {
+  /* Title of cards  */
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 3rem;
+
+  margin-bottom: 3rem; /* Space between title & grid*/
   color: #333;
 }
 
+/** Grid layout of cards  */
+/* Desktop: 3 cards per ROW  */
+/* Tablet: 2 cards per ROW  */
+/* Mobile: 1 card per ROW  */
+
 .grid {
   display: grid;
+
+  /* RWD for Grid Columns */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 4rem;
-  justify-items: center;
+  /*
+  Responsive grid that adapts to the screen size 
+  repeat: Create repeating column patterns
+  auto-fit: Auto fit each column based on space 
+  minmax: each column min of 300px, max equal share 
+  */
+
+  /* Grid spacing*/
+  gap: 4rem; /* Space between the grid items */
+
+  justify-items: center; /* Centers each card within the cell*/
 }
 
-/* Mobile responsive */
+/*! RWD mobile/tablet  */
 @media (max-width: 768px) {
+  /* Adjust Grid for smaller screens */
   .grid {
+    /* Smaller min column width for mobile */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* 280px min lets cards fit better on mobile devices  */
+
+    /* reduce gap on mobile  */
     gap: 1.5rem;
   }
 
   .sectionTitle {
-    font-size: 2rem;
+    font-size: 2rem; /* Smaller title size for mobile */
   }
 }
