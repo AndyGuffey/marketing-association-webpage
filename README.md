@@ -1,6 +1,6 @@
 # Marketing Association NZ Website
 
-A modern, responsive website for Marketing Association NZ built with React and Vite.
+Responsive website for Marketing Association NZ built with React and Vite.
 This is a learning project for Mission Ready Level 5 Advanced Full Stack development program
 
 ## Features
@@ -26,14 +26,8 @@ This is a learning project for Mission Ready Level 5 Advanced Full Stack develop
 
 ## Screenshots
 
-### Desktop View
-
-![Desktop View](./images/desktop.png)
-
-### Tablet View
-
-![Tablet View](./images/tablet.png)
-
-### Mobile View
-
-![Mobile View](./images/mobile.png)
+<div styles= "display: flex; gap: 15px; align-items: flex-start;">
+    <img src="./images/desktop.png" alt="Desktop View" width="400">
+    <img src="./images/tablet.png" alt="Tablet View" width="400">
+    <img src="./images/mobile.png" alt="Mobile View" width="400">
+</div>
