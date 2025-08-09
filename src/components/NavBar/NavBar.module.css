@@ -213,4 +213,21 @@
   }
 }
 
+@media (max-width: 884px) {
+  /* Hide Desktop navigation */
+  .rightSection {
+    display: none; /* hide desktop menu */
+  }
+
+  /* Show mobile hamburger  */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Adjust Logo & text size  */
+  .companyName {
+    font-size: 0.7rem;
+  }
+}
+
 /* TODO: If enough time Adjust the card size on mobile view */
