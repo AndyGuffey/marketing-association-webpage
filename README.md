@@ -5,11 +5,10 @@ This is a learning project for Mission Ready Level 5 Advanced Full Stack develop
 
 ## Features
 
-- **Responsive Design** - Mobile-first approach with hamburger navigation
-- **Hero Section** - Eye-catching banner with search functionality
-- **Card Grid** - Dynamic article cards with hover effects
-- **Modern UI** - Clean design with smooth transitions
-- **Fast Performance** - Built with Vite for optimal loading speeds
+- **Responsive Design** - Mobile-first approach with hamburger dropdown navigation menu
+- **Hero Section** - Hero banner with search bar
+- **Card Grid** - Article cards with hover effects
+- **Modern UI** - Clean design with a focus on smooth transitions
 
 ## Tech Stack
 
@@ -46,23 +45,3 @@ _Original wireframes showing desktop and mobile layouts_
 <img src="./images/mobile.png" alt="Mobile View - Single column with stacked layout" width="250">
 
 </div>
-
-### Responsive Breakpoints
-
-```css
-/* Mobile Portrait */
-@media (max-width: 576px) {
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-}
-
-/* Large Tablet */
-@media (max-width: 884px) {
-}
-
-/* Desktop */
-@media (min-width: 1200px) {
-}
-```

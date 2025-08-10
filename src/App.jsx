@@ -2,8 +2,8 @@ import "./App.css";
 import Hero from "./components/HeroSection/Hero";
 import NavBar from "./components/NavBar/NavBar";
 import GridOfCards from "./components/CardContent/GridOfCards";
-import { dummyCards } from "./data/dummyCards";
 import Footer from "./components/Footer/Footer";
+import { dummyCards } from "./data/dummyCards";
 
 function App() {
   return (
