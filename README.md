@@ -45,3 +45,25 @@ _Original wireframes showing desktop and mobile layouts_
 <img src="./images/mobile.png" alt="Mobile View - Single column with stacked layout" width="250">
 
 </div>
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js**
+- **Git**
+- **npm**
+
+### Installation
+
+```bash
+# Clone the repository
+git clone [https://github.com/AndyGuffey/marketing-association-webpage]
+cd marketing-association-nz
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
