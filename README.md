@@ -58,7 +58,7 @@ _Original wireframes showing desktop and mobile layouts_
 
 ```bash
 # Clone the repository
-git clone [https://github.com/AndyGuffey/marketing-association-webpage]
+git clone https://github.com/AndyGuffey/marketing-association-webpage
 cd marketing-association-nz
 
 # Install dependencies
